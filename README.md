@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🌸 Joyory Beauty Match - Recommendation Engine & Dataset
 
 Deterministic, zero-dependency beauty product recommendation engine and catalog designed for the **Joyory Beauty Match** hackathon project.
@@ -193,3 +194,6 @@ npm test
 - **Profile 1**: Oily skin, Acne concerns, Skincare, Budget ₹1,500, Simple routine
 - **Profile 2**: Dry skin, Hydration, Skincare, Budget ₹2,500, Moderate routine
 - **Profile 3**: Dry/damaged hair, Hair damage, Haircare, Budget ₹2,000, Simple routine
+=======
+# joyory-beauty-match
+>>>>>>> cf3671985e66cdcb56239276e936e6321895e5a4
