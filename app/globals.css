@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Outfit:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-playfair: 'Playfair Display', Georgia, serif;
+  --font-inter: 'Inter', system-ui, sans-serif;
+  --font-outfit: 'Outfit', system-ui, sans-serif;
+}
+
+body {
+  color: #1c1917;
+  background-color: #faf7f5;
+  font-family: var(--font-inter);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom Joyory Beauty Utilities */
+.font-serif {
+  font-family: var(--font-playfair);
+}
+
+.font-sans {
+  font-family: var(--font-inter);
+}
+
+.font-outfit {
+  font-family: var(--font-outfit);
+}
+
+.bg-gradient-beauty {
+  background: linear-gradient(135deg, #fdf8f6 0%, #faece8 50%, #f7ded6 100%);
+}
+
+.bg-gradient-rose {
+  background: linear-gradient(135deg, #e86178 0%, #c43f55 100%);
+}
+
+.bg-gradient-champagne {
+  background: linear-gradient(180deg, #ffffff 0%, #faf5f2 100%);
+}
+
+.text-gradient-rose {
+  background: linear-gradient(135deg, #e86178 0%, #9e2a2b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1edea;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d8c2bb;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b87667;
+}

@@ -1,22 +1,31 @@
 {
-  "name": "joyory-beauty-match-engine",
+  "name": "joyory-beauty-match",
   "version": "1.0.0",
-  "description": "Deterministic product recommendation engine and beauty dataset for Joyory Beauty Match",
+  "description": "Joyory Beauty Match - Personalized beauty shopping assistant",
   "type": "module",
-  "main": "src/index.js",
   "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
     "demo": "node src/demo.js",
-    "test": "node src/test.js",
-    "start": "node src/demo.js"
+    "test": "node src/test.js"
   },
-  "keywords": [
-    "beauty",
-    "recommendation-engine",
-    "skincare",
-    "haircare",
-    "joyory",
-    "hackathon"
-  ],
-  "author": "Joyory Team",
-  "license": "MIT"
+  "dependencies": {
+    "next": "^14.2.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^2.4.0",
+    "lucide-react": "^0.417.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.4",
+    "@types/node": "^20.14.12",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "postcss": "^8.4.40",
+    "tailwindcss": "^3.4.7",
+    "autoprefixer": "^10.4.19"
+  }
 }
