@@ -2,7 +2,7 @@ import React, { HTMLAttributes } from 'react';
 import { cn } from '@/lib/utils';
 
 export interface BadgeProps extends HTMLAttributes<HTMLSpanElement> {
-  variant?: 'default' | 'rose' | 'emerald' | 'gold' | 'outline' | 'subtle';
+  variant?: 'default' | 'rose' | 'emerald' | 'gold' | 'outline' | 'subtle' | 'indigo';
 }
 
 export function Badge({
@@ -18,6 +18,7 @@ export function Badge({
     gold: 'bg-amber-50 text-amber-800 border-amber-200',
     outline: 'bg-transparent text-stone-700 border-stone-300',
     subtle: 'bg-joyory-100/60 text-joyory-800 border-joyory-200/50',
+    indigo: 'bg-indigo-50 text-indigo-700 border-indigo-200',
   };
 
   return (

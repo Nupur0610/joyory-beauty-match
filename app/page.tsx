@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/Button';
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/components/ui/Card';
 import { Badge } from '@/components/ui/Badge';
-import { Sparkles, ShieldCheck, Layers, ArrowRight, Star, Heart, CheckCircle2 } from 'lucide-react';
+import { Sparkles, ShieldCheck, Layers, ArrowRight, Star, Heart, CheckCircle2, Compass, ExternalLink } from 'lucide-react';
 
 export default function HomePage() {
   const steps = [
@@ -79,11 +79,13 @@ export default function HomePage() {
                 <ArrowRight className="w-4 h-4 ml-2" />
               </Button>
             </Link>
-            <Link href="/product">
-              <Button variant="outline" size="lg" className="text-base px-8 py-4">
-                Browse Products
+            <a href="https://joyory.com" target="_blank" rel="noopener noreferrer">
+              <Button variant="outline" size="lg" className="text-base px-8 py-4 bg-white/80 hover:bg-stone-50 text-stone-900 border-stone-300">
+                <Compass className="w-5 h-5 mr-2 text-joyory-rose" />
+                Browse Products on Joyory
+                <ExternalLink className="w-4 h-4 ml-2 opacity-70" />
               </Button>
-            </Link>
+            </a>
           </div>
 
           {/* Trust badges */}

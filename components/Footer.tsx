@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { Sparkles, Heart } from 'lucide-react';
+import { Sparkles, Heart, ExternalLink } from 'lucide-react';
 
 export function Footer() {
   return (
@@ -29,6 +29,17 @@ export function Footer() {
             </h4>
             <ul className="space-y-2 text-xs">
               <li>
+                <a
+                  href="https://joyory.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-joyory-rose font-semibold hover:underline inline-flex items-center gap-1"
+                >
+                  <span>Browse Products on Joyory</span>
+                  <ExternalLink className="w-3 h-3" />
+                </a>
+              </li>
+              <li>
                 <Link href="/quiz" className="hover:text-joyory-rose transition-colors">
                   Beauty Match Quiz
                 </Link>
@@ -36,11 +47,6 @@ export function Footer() {
               <li>
                 <Link href="/routine" className="hover:text-joyory-rose transition-colors">
                   Routine Builder
-                </Link>
-              </li>
-              <li>
-                <Link href="/product" className="hover:text-joyory-rose transition-colors">
-                  Product Comparison
                 </Link>
               </li>
               <li>
@@ -54,23 +60,23 @@ export function Footer() {
           {/* Routine Steps */}
           <div>
             <h4 className="text-sm font-semibold text-white uppercase tracking-wider mb-4">
-              Categories
+              AI Beauty Features
             </h4>
             <ul className="space-y-2 text-xs">
-              <li><span className="text-stone-400">Cleansers & Toners</span></li>
-              <li><span className="text-stone-400">Treatment Serums</span></li>
-              <li><span className="text-stone-400">Barrier Moisturizers</span></li>
-              <li><span className="text-stone-400">Restorative Haircare</span></li>
+              <li><span className="text-stone-300">✨ Beauty Match Quiz</span></li>
+              <li><span className="text-stone-300">💄 AI Virtual Try-On</span></li>
+              <li><span className="text-stone-300">🎨 Foundation Shade Finder</span></li>
+              <li><span className="text-stone-300">🧪 Ingredient Safety Checker</span></li>
             </ul>
           </div>
 
-          {/* Hackathon Badge */}
+          {/* Joyory Info */}
           <div className="p-4 rounded-xl bg-stone-800/80 border border-stone-700/50 space-y-2">
             <span className="text-xs font-semibold text-joyory-rose tracking-wide uppercase">
-              Hackathon Project
+              Joyory Platform
             </span>
-            <p className="text-xs text-stone-300">
-              Built with precision by Mahek, Mauli & Nupur for the Joyory Beauty Match Experience.
+            <p className="text-xs text-stone-300 leading-relaxed">
+              Joyory is an exciting beauty-tech platform offering 100% authentic cosmetics, skincare, haircare, and body care with PAN India delivery.
             </p>
           </div>
         </div>
